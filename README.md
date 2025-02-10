@@ -51,7 +51,7 @@ Create a **digital wallet application** where users can:
 ---
 
 ## Submission
-- **Source code (GITHUB LINK)** for both frontend and backend.
+- **Source code (GITHUB LINK)** send an email to tech@hobbiton.co.zm for both frontend and backend.
 - **Setup instructions** to run the application locally.
 
 ---
