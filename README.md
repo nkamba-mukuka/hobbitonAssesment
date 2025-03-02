@@ -1,6 +1,7 @@
 # Full-Stack Digital Wallet - Technical Assessment
 
 ## Tech Stack
+
 - **Frontend**: React or Angular with TypeScript
 - **Backend**: C# (.NET Core)
 - **Database**: Any relational database
@@ -8,7 +9,9 @@
 ---
 
 ## Task
+
 Create a **digital wallet application** where users can:
+
 1. Register and log in.
 2. View their wallet balance.
 3. Send money to other users.
@@ -19,6 +22,7 @@ Create a **digital wallet application** where users can:
 ## Technical Requirements
 
 ### Frontend
+
 - Use **TypeScript**.
 - Implement **form validation** for user inputs.
 - Show **real-time balance updates** after transactions.
@@ -26,18 +30,21 @@ Create a **digital wallet application** where users can:
 - Handle **loading and error states** gracefully.
 
 ### Backend
+
 - Build a **RESTful API** using **C# (.NET Core)**.
 - Implement **basic authentication** for user login.
 - Use **database transactions** to ensure data consistency.
 - Return **proper HTTP status codes** for API responses.
 
 ### Database
+
 - Design a **relational schema** for users, wallets, and transactions.
 - Ensure **data consistency** (e.g., prevent negative balances, handle concurrent transactions).
 
 ---
 
 ## Evaluation Criteria
+
 1. **Code Quality (40%)**:
    - Clean, readable, and maintainable code.
    - Proper use of OOP principles.
@@ -51,17 +58,20 @@ Create a **digital wallet application** where users can:
 ---
 
 ## Submission
+
 - **Source code (GITHUB LINK)** send an email to tech@hobbiton.co.zm for both frontend and backend.
 - **Setup instructions** to run the application locally.
 
 ---
 
 ## Time Limit
+
 - **1 week** to complete the assignment.
 
 ---
 
 ## Notes
+
 - Keep the implementation **simple** and focused on core features.
 - Prioritize **code quality** over adding unnecessary features.
 - Document your **database choice** and design decisions.
