@@ -60,9 +60,11 @@ export function LoginForm() {
         />
       </div>
       {error && <p className="text-sm text-red-500">{error}</p>}
-      <Button type="submit" className="w-full">
+      <Button type="submit" className="w-full btn-pink bg-pink-300 text-white rounded-md py-2 px-4 hover:bg-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-500"
+      >
         Login
       </Button>
+
     </form>
   )
 }

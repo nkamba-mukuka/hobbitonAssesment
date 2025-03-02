@@ -8,6 +8,8 @@ import { Button } from "@/app/components/ui/button"
 import { Input } from "@/app/components/ui/input"
 import { Label } from "@/app/components/ui/label"
 import { useAuth } from "@/context/auth-context"
+import "../globals.css"
+
 
 export function RegisterForm() {
     const [name, setName] = useState("")
@@ -72,7 +74,8 @@ export function RegisterForm() {
                 />
             </div>
             {error && <p className="text-sm text-red-500">{error}</p>}
-            <Button type="submit" className="w-full">
+            <Button type="submit" className="w-full bg-pink-300 text-white rounded-md py-2 px-4 hover:bg-pink-400 focus:outline-none focus:ring-2 focus:ring-pink-500"
+            >
                 Register
             </Button>
         </form>
