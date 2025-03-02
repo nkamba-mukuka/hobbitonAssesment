@@ -42,10 +42,10 @@ import './globals.css'
 
 export default function Home() {
     return (
-        <main className="flex min-h-screen flex-col items-center justify-center p-4 bg-gradient-to-b from-gray-100 to-gray-200">
-            <Card className="w-full max-w-md shadow-lg">
+        <main className="flex min-h-screen flex-col items-center justify-center p-4">
+            <Card className="w-full max-w-md bg-white/80 backdrop-blur-md shadow-xl border-0">
                 <CardHeader className="text-center">
-                    <CardTitle className="text-3xl font-bold text-primary">Digital Wallet</CardTitle>
+                    <CardTitle className="text-3xl font-bold text-gray-800">Digital Wallet</CardTitle>
                     <CardDescription className="text-lg text-gray-600">Login or create an account to continue</CardDescription>
                 </CardHeader>
                 <CardContent>
