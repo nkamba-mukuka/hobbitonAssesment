@@ -6,6 +6,8 @@ import { useAuth } from "@/context/auth-context"
 import { Button } from "@/app/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/app/components/ui/card"
 import { api, Transaction } from "@/app/services/api"
+import { SendMoneyForm } from "@/app/components/send-money-form"
+import { TransactionForm } from "@/app/components/transaction-form"
 
 export default function Dashboard() {
     const { authState, setUser } = useAuth()
@@ -52,7 +54,7 @@ export default function Dashboard() {
     }
 
     return (
-        <main className="min-h-screen w-full dashboard-background">
+        <main className="min-h-screen w-full ">
             <div className="flex flex-col items-center justify-center min-h-screen p-4 relative z-10">
                 <Card className="w-full max-w-3xl bg-white/90 backdrop-blur-sm shadow-xl">
                     <CardHeader className="text-center">
@@ -62,6 +64,10 @@ export default function Dashboard() {
                         <div className="bg-pink-500/90 text-white p-6 rounded-lg backdrop-blur-sm">
                             <h2 className="text-xl font-semibold">Current Balance</h2>
                             <p className="text-3xl font-bold">${balance.toFixed(2)}</p>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <TransactionForm onSuccess={fetchTransactions} />
+                            <SendMoneyForm onSuccess={fetchTransactions} />
                         </div>
                         <div className="bg-white/80 p-6 rounded-lg backdrop-blur-sm">
                             <h2 className="text-xl font-semibold mb-4 text-gray-800">Transaction History</h2>

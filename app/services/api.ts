@@ -23,6 +23,12 @@ export interface TransactionResponse {
     transactions: Transaction[];
 }
 
+export interface SendMoneyResponse {
+    message: string;
+    sender_transaction: Transaction;
+    recipient_transaction: Transaction;
+}
+
 class ApiService {
     private token: string | null = null;
 
@@ -102,6 +108,21 @@ class ApiService {
 
         if (!response.ok) {
             throw new Error('Failed to create transaction');
+        }
+
+        return response.json();
+    }
+
+    async sendMoney(recipientEmail: string, amount: number): Promise<SendMoneyResponse> {
+        const response = await fetch(`${API_URL}/transactions/send`, {
+            method: 'POST',
+            headers: this.getHeaders(),
+            body: JSON.stringify({ recipient_email: recipientEmail, amount }),
+        });
+
+        if (!response.ok) {
+            const error = await response.text();
+            throw new Error(error || 'Failed to send money');
         }
 
         return response.json();

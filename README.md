@@ -111,27 +111,31 @@ This is the backend service for the Hobbiton Digital Wallet application. It prov
 ## Setup
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/hobbiton-wallet-backend.git
    cd hobbiton-wallet-backend
    ```
 
 2. Install dependencies:
+
    ```bash
    go mod download
    ```
 
 3. Create and configure the environment variables:
+
    ```bash
    cp .env.example .env
    # Edit .env with your configuration
    ```
 
 4. Set up the database:
+
    ```bash
    # Create the database
    createdb hobbiton_wallet
-   
+
    # Run migrations (requires golang-migrate)
    migrate -database "${DATABASE_URL}" -path internal/database/migrations up
    ```
