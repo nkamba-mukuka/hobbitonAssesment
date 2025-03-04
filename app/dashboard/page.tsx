@@ -52,7 +52,7 @@ export default function Dashboard() {
     }
 
     return (
-        <main className="min-h-screen w-full dashboard-background">
+        <main className="min-h-screen w-full ">
             <div className="flex flex-col items-center justify-center min-h-screen p-4 relative z-10">
                 <Card className="w-full max-w-3xl bg-white/90 backdrop-blur-sm shadow-xl">
                     <CardHeader className="text-center">
