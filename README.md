@@ -3,7 +3,7 @@
 ## Tech Stack
 
 - **Frontend**: React or Angular with TypeScript
-- **Backend**: C# (.NET Core)
+- **Backend**: golan
 - **Database**: Any relational database
 
 ---
@@ -31,7 +31,7 @@ Create a **digital wallet application** where users can:
 
 ### Backend
 
-- Build a **RESTful API** using **C# (.NET Core)**.
+- Build a **RESTful API** using golan
 - Implement **basic authentication** for user login.
 - Use **database transactions** to ensure data consistency.
 - Return **proper HTTP status codes** for API responses.
